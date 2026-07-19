@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Feedback",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Provide thumbs-up/down feedback on generated variations"
+            }
+          }
+        ],
+        "send": {
+          "callback": "feedback:submit"
+        }
+      }
+    ]
+  }
+]

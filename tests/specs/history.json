@@ -1,19 +1,17 @@
 [
   {
-    "name": "/history",
+    "name": "/history shows empty state for new user",
     "steps": [
       {
+        "send": { "text": "/history" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Show saved icon history with re-download options"
+              "text": "No icon history yet — tap 🎨 Generate to create your first set!"
             }
           }
-        ],
-        "send": {
-          "text": "/history"
-        }
+        ]
       }
     ]
   }
